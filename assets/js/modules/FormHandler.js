@@ -11,6 +11,13 @@ export class FormHandler {
 
     this.validator.bindValidationOnBlur();
 
+    this.validator.inputs.forEach((input) => {
+      input.addEventListener("invalid", (e) => {
+        e.preventDefault();
+        this.validator.validateField(input); 
+      });
+    });
+
     this.form.addEventListener("submit", (e) => {
       const allValid = this.validator.validateAll();
       if (!allValid) e.preventDefault();
