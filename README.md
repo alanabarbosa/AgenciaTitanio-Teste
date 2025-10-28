@@ -32,8 +32,10 @@ AgenciaTitanio-Teste/
 
 - `index.html` → Página principal da landing page.  
 - `salvar.php` → Backend PHP para salvar os dados do formulário no MySQL.  
+- `conexao.php` → Configuração de conexão com o banco de dados.  
 - `assets/js/script.js` → Script principal, utilizando módulos JS.  
-- `modules/` → Contém classes JS separadas e modularizadas.  
+- `assets/js/modules/` → Contém classes JS separadas e modularizadas.  
+- `assets/sql/leads.sql` → Script de criação do banco ou tabela de leads. 
 
 ---
 
